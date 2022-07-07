@@ -1,0 +1,175 @@
+<!--simple interest calculation type-1-->
+<html>
+    <head>
+        <script>
+            var p=100000;//pricipal amount
+            var i=10;//interest in percent
+            var t=3;//time in years
+            var si;
+            si=p*i*t/100;
+            console.log("simple interest = "+ si);
+        </script>
+    </head>
+</html>
+<!--simple interest calculation type-2-->
+<html>
+    <head>
+        <script>
+            function add(){      
+            var p;//pricipal amount
+            var i;//interest in percent
+            var t;//time in years
+            var si;
+            p = parseInt(document.getElementById("p").value);
+            i = parseInt(document.getElementById("i").value);
+            t = parseInt(document.getElementById("t").value);
+            si=p*i*t/100;
+             document.getElementById("interest").value = si;
+        }
+
+        </script>          
+    </head>
+    <body>
+        <h1 style="text-align:center;">Simple Interset</h1>
+        <p>Principal amount: <input id="p"></p>
+        <p>interest in percent: <input id="i"></p>
+        <p>time in years: <input id="t"></p>
+        <button onclick="add()">Click</button>
+       <p>Simple Interest: <input id="interest"></p>
+    </body>
+</html>
+<!--area of triangle type-1-->
+
+<html>
+    <head>
+        <script>
+           var h = 20;//height of a triangle
+           var b = 12;//breadth of a triangle
+           var a;//area of a triangle
+           a = h*b/2;
+           console.log("area of a triangle: "+a);
+        </script>
+    </head>
+</html>
+<!--area of triangle type-2-->
+<html>
+    <head>
+        <script>
+            function dear(){
+                var h,b;
+                var j;
+                h =(document.getElementById("height").value);
+                b =(document.getElementById("bread").value);
+                j = h*b/2;
+                document.getElementById("test").value = j;
+            }
+        </script>
+    </head>
+    <body>
+        <h1 style="text-align:center">Area of a triangle</h1>
+        <p>enter the height:<input id="height"></p>
+        <p>enter the breadth:<input id="bread"></p>
+        <button onclick="dear()">Click</button>
+        <p>area of a triangle: <input id="test"></p>
+    </body>
+</html>
+
+<!--area of circle type-1-->
+
+<html>
+    <head>
+        <script>
+           var r = 6;//radius of circle
+           var a;//area of a circle
+           a = 3.14*r*r;
+           console.log("area of a circle: "+a);
+        </script>
+    </head>
+</html>
+  <!--area of circle type-2-->
+<html>
+    <head>
+        <script>
+            function main(){
+            var r;
+            var a;
+            r = document.getElementById("radius").value;
+            a = 3.14*r*r;
+            document.getElementById("area").value = a;
+        }
+        </script>
+    </head>
+    <body>
+        <h1 style="text-align:center">Area of a circle</h1>
+        <p>enter radius: <input id="radius"></p>
+        <button onclick="main()">Click</button>
+        <p>Area of circle: <input id="area"> </p>
+    </body>
+</html>
+
+<!--area of rectangle type-1-->
+<html>
+    <head>
+        <script>
+           var l = 20;//length of a rectangle
+           var b = 12;//breadth of a rectangle
+           var a;//area of a rectangle
+           a = l*b;
+           console.log("area of a rectangle: "+a);
+        </script>
+    </head>
+</html>
+<!--area of rectangle type-2-->
+<html>
+    <head>
+        <script>
+            function area(){
+                var l,b;
+                var a;
+                l =(document.getElementById("length").value)
+                b =(document.getElementById("breadth").value)
+                a = l*b
+                document.getElementById("total").value = a;
+            }
+        </script>
+    </head>
+    <body>
+        <h1 style="text-align:center">Area of a rectangle</h1>
+        <p>enter the length:<input id="length"></p>
+        <p>enter the breadth:<input id="breadth"></p>
+        <button onclick="area()">click</button>
+        <p>area of a rectangle: <input id="total"></p>
+    </body>
+</html>
+
+<!--swaping of two numbers-->
+<html>
+    <head>
+        <script>
+            var a=12;
+            var b=13;
+            a=a+b;
+            b=a-b;
+            a=a-b;
+            console.log(a,b)
+        </script>
+    </head>
+</html>
+
+<!--swaping of two numbers-->
+<html>
+    <head>
+        <script>
+            var a=10;
+            var b=20;
+            var r;
+            r=a;
+            a=b;
+            b=r;
+            console.log(a,b)
+        </script>
+    </head>
+</html>
+
+
+
