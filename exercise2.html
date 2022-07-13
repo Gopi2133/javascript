@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>if condition based programes</title>
+        <script>
+            //calculating the voting age
+        var a=18;
+        if(a>=18){
+            console.log("The following person is eligible for voting")
+        }
+        else{
+            console.log("The following person is not eligible for voting")
+        }
+        </script>
+    </head>
+</html>
+
+<script>
+    //senior citizen calculation
+    var b=58;
+    if(b>=60){
+        console.log("The following person is a senior citizen")
+    }
+    else{
+        console.log("The following person is not a senior citizen")
+    }
+</script>
+
+<script>
+    //Enter the number and display the following days of the week
+    var c=4;
+    if ((c>=1)&(c<=7)){
+        if(c==1){console.log("Monday")}
+        else if(c==2){console.log("tuesday")}
+        else if(c==3){console.log("Wenesday")}
+        else if(c==4){console.log("Thursday")}
+        else if(c==5){console.log("Friday")}
+        else if(c==6){console.log("Saturday")}
+        else if(c==7){console.log("sunday")}
+    }
+    else{
+        console.log("Entered a wrong number")
+    }
+</script>
+
+<script>
+    //Odd or Even
+    var d=10;
+    if(d%2==0){
+        console.log(d+"is Even")
+    }
+    else{
+        console.log(d+"is Odd")
+    }
+</script>
+
+<script>
+    //To check wether a number is positive or negative
+    var e=1;
+    if(e<0){
+        console.log("The folowing number is negative")
+    }
+    else{console.log("The following number is positive")}
+</script>
+
+<script>
+    /*When squirrels get together for a party, they like to have cigars.
+     A squirrel party is successful when the number of cigars is between 40 and 60, inclusive. 
+     Unless it is the weekend, in which case there is no upper bound on the number of cigars. 
+     Return true if the party with the given values is successful, or false otherwise.*/
+    
+    var f=46;
+    if((f>=1)&(f<=100)){
+        if((f>=1)&(f<=39)){
+            console.log("False")
+        }
+        else if((f>=40)&(f<=60)){
+            console.log("True")
+        }
+        else if ((f>=61)&(f<=100)){
+            console.log("True")
+        }
+    }
+    else{console.log("Cigars crossed the limit")}
+</script>
+
+<script>
+    /*You are driving a little too fast, and a police officer stops you. 
+    Write code to compute the result, encoded as an int value: 0=no ticket, 1=small ticket, 2=big ticket. 
+    If speed is 60 or less, the result is 0. If speed is between 61 and 80 inclusive, the result is 1. 
+    If speed is 81 or more, the result is 2. Unless it is your birthday -- on that day, your speed 
+    can be 4 higher in all cases.*/
+    var g=71;
+    var booleanvalue=false;
+    if(booleanvalue==true){
+        console.log("it is your birthday so you can go..!")
+    }
+    else if((booleanvalue==false)&((g>=0)&(g<=10))){
+        console.log("no ticket")
+    }
+    else if((booleanvalue==false)&((g>=11)&(g<=60))){
+        console.log("1 ticket")
+    }
+    else if((booleanvalue==false)&((g>=61)&(g<=80))){
+        console.log("2 ticket")
+    }
+    else if((booleanvalue==false)&((g>=81)&(g<=100))){
+        console.log("3 ticket")
+    }
+</script>
+
