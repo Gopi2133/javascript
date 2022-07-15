@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+<script>
+    function bill(){
+var pizza;
+var vegie;
+var onion;
+var oprice=10;
+var vegieprice=100;
+var total;
+pizza=(document.getElementById("pizza").value)
+if (pizza=="veg"){
+ vegie=(document.getElementById("vegie").value);
+ total=vegie*vegieprice;
+ document.getElementById("price").value = total;
+}
+ else if (pizza=="moreveg"){
+    vegie=(document.getElementById("vegie").value);
+    onion=(document.getElementById("onion").value);
+    total=vegie*vegieprice+onion*oprice;
+    document.getElementById("price").value = total; 
+}
+}
+</script>
+</head>
+<body>
+    <h1 style="text-align:center">Pizza menu</h1>
+    <p id="pizza">what type of pizza: 
+       <form>
+       <input type="radio" id="veg" name="pizza" value="own" >
+       <label for="veg">Veg</label><br>
+       <input type="radio" id="moreveg"  name="pizza" value="owner">
+       <label for="moreveg">More Veg</label><br> </form>
+
+    </p>
+    <p>How many veg pizza do you want: <input id="vegie"></p>
+    <p>onion toppings: <input id="onion"></p>
+    <button onclick="total">Bill</button>
+    <p>Your bill is:<input id="price"></p>
+</body>
