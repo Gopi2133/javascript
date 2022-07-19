@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>exercises based on javascript</title>
+        <script>
+        //palindrom 
+        var i;
+        var n=121;
+        var r;
+        var s=0;
+    for (i=n;i>0;){
+        r=i%10;
+        s=s*10+r;
+        i=i/10;
+    }
+    if(n==s)
+    {
+        console.log(n + " is a Palindrome Number");
+    }
+    else
+    {
+        console.log(n + " is not a Palindrome Number");
+    }
+        </script>
+    </head>
+</html>
+<script>
+    //string palindrome
+    var s="lil";
+    var i
+    var len;
+    var g = 0; 
+    len = s.length;
+    for(i=0; i < len/2; i++){
+        if(s[i] != s[len-1-i]){
+            g = 1;
+            break;
+           }
+        }
+    
+    if (g) {
+        console.log(" is not a palindrome"); 
+    }    
+    else {
+        console.log(" is a palindrome"); 
+    }
+
+</script>
+<script>
+ //armstrong number
+    var num=153;
+    var sum=0;
+    var temp;
+    var rem; 
+    for(temp=num;temp>0;) {
+        rem = temp%10;
+        sum += rem * rem * rem;
+        temp = parseInt(temp / 10); 
+    } 
+    if (sum==num){
+        console.log(num + " Armstrong number");
+    }
+    else console.log(num + " Not a Armstrong number")
+</script>
+<script>
+    //prime number
+    var num =5;
+    var i;
+    if (num==1) {
+    console.log("1 is neither prime or composite number");
+     }
+    for (i = 2; i < num; i++) {
+        if (num % i == 0) { 
+            console.log("is a not prime number"); 
+        }
+        else {console.log(" prime number")};
+    }
+</script>
+<script>
+     var num=5;
+     var i;
+     var fact=1;
+     for(i=1;i<=num;i++){    
+      fact=fact*i;  
+     }
+     console.log("factorial is : "+ fact)
+</script>
