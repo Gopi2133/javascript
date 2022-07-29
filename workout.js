@@ -33,6 +33,26 @@ console.log(string);
 //ascending order
 var arr = [68,94,35,46,25];
 var size = 5;
+
+
+
+//odd even
+function check(){
+  function add(num1, num2){
+    let sum = num1 + num2;
+    return sum;
+  }
+  console.log(add(10,8))
+  function even(){
+    if (sum%2==0){
+      console.log("even")
+    }
+    else{
+      console.log("is an odd number")
+    }
+  }
+}
+
 var temp;
 for(i = 0;i < size;i++){
   for(j = i;j < size;j++){
