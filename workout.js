@@ -69,3 +69,38 @@ console.log("ascending order:")
   console.log(arr[i])
 
 }
+
+
+
+
+
+
+
+//   function calculateAge (){
+//     const a = new Date();
+//     a.setFullYear(2022,8,4)
+//     const d = new Date();
+//     a.setFullYear(2004,8,28);
+//     const c = a-d;
+//     return c ; 
+// }
+// console.log(calculateAge())
+
+
+
+//age calculator
+var dob = new Date(2004,8,28);  
+//calculate month difference from current date in time  
+var month_diff = Date.now() - dob.getTime();  
+  
+//convert the calculated difference in date format  
+var age_dt = new Date(month_diff);   
+  
+//extract year from date      
+var year = age_dt.getUTCFullYear();  
+  
+//now calculate the age of the user  
+var age = Math.abs(year - 1970);  
+  
+//display the calculated age  
+console.log("Age of the date entered: " + age + " years");
